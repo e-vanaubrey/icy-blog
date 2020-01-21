@@ -24,12 +24,18 @@ collections: # A list of collections the CMS should be able to edit
         name: "author"
         widget: "select"
         options:
-          - { label: "Dan Urbanowicz", value: "dan_urbanowicz" }
-          - { label: "John Doe", value: "john_doe" }
+          - { label: "Evan Aubrey", value: "evan_aubrey" }
+          - { label: "Ben Montoya", value: "ben_montoya" }
+          - { label: "Ian Davis", value: "ian_davis" }
+          - { label: "Jeremy Zeilik", value: "jeremy_zeilik" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
+      - {label: "Spotify Link", name: "spotify", widget: "string", tagname: "Spotify"}
+      - {label: "Apple Podcasts Link", name: "apple_podcasts", widget: "string", tagname: "Apple-Podcasts"}
+      - {label: "Google Podcasts Link", name: "google_podcasts", widget: "string", tagname: "Google-Podcasts"}
+      - {label: "Stitcher Link", name: "stitcher", widget: "string", tagname: "stitcher"}
     # PAGES
   - name: "page"
     label: "Page"
