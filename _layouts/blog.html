@@ -13,19 +13,20 @@ layout: default
   <h3>Posts</h3>
 
   <ul>
-    {% for post in site.posts %}
+    {% for episode in site.episodes %}
     {% assign author = site.data.authors[post.author] %}
       <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <h4><a href="{{ episode.url }}">{{ episode.title }}</a></h4>
         <time datetime="{{ post.date }}">
           <small>
-            <strong>{{ post.date | date_to_string }}</strong>
+            <strong>{{ episode.date | date_to_string }}</strong>
             {% if author %}
               by {{ author.name }}
             {% endif %}
           </small>
         </time>
-        {{ post.excerpt | strip_newlines | truncate: 180 }}
+        {{ episode.excerpt | strip_newlines | truncate: 180 }}
+        {{ episode.episode_links }}
       </li>
     {% endfor %}
   </ul>

@@ -180,3 +180,15 @@ footer {
     grid-column: main;
   }
 }
+
+.links{
+  display: flex;
+  a{
+    text-decoration: none !important;
+    border: none;
+  }
+  img{
+    height: 40px;
+    margin-right: 20px;
+  }
+}

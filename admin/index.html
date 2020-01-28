@@ -27,10 +27,12 @@
           id: match[1]
         };
       }, */
+
       // Function to create a text block from an instance of this component
       
       toBlock: function(obj) {
         return(
+          '{:.links}' + '  ' +
           '[![I Chews You on Apple Podcasts](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-04-16T00:00:00Z&kind=podcast&bubble=podcasts)](' + obj.apple + ')' + '  '
           + '[![I Chews You on Spotify](/assets/img/uploads/spotify-badge-button.svg)](' + obj.spotify + ')' + '  '
           + '[![I Chews You on Spotify](/assets/img/uploads/google-podcasts-badge-button.svg)](' + obj.google + ')' + '  '
@@ -40,7 +42,9 @@
       // (component gives better render performance)
       toPreview: function(obj) {
         return (
-          '[![I Chews You on Apple Podcasts](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-04-16T00:00:00Z&kind=podcast&bubble=podcasts)](' + obj.apple +')'
+          '[![I Chews You on Apple Podcasts](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-04-16T00:00:00Z&kind=podcast&bubble=podcasts)](' + obj.apple + ')' + '  '
+          + '[![I Chews You on Spotify](/assets/img/uploads/spotify-badge-button.svg)](' + obj.spotify + ')' + '  '
+          + '[![I Chews You on Spotify](/assets/img/uploads/google-podcasts-badge-button.svg)](' + obj.google + ')' + '  '
         );
       }
     });
