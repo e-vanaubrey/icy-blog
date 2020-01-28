@@ -18,7 +18,8 @@
       fields: [
       {name: 'apple', label: 'Apple Podcasts', widget: 'string'},
       {name: 'spotify', label: 'Spotify', widget: 'string'},
-      {name: 'google', label: 'Google Podcasts', widget: 'string'}],
+      {name: 'google', label: 'Google Podcasts', widget: 'string'},
+      {name: 'stitcher', label: 'Stitcher', widget: 'string'}],
       // Pattern to identify a block as being an instance of this component
       //pattern: /^youtube (\S+)$/,
       // Function to extract data elements from the regexp match
@@ -35,7 +36,8 @@
           '{:.links}' + '  ' +
           '[![I Chews You on Apple Podcasts](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-04-16T00:00:00Z&kind=podcast&bubble=podcasts)](' + obj.apple + ')' + '  '
           + '[![I Chews You on Spotify](/assets/img/uploads/spotify-badge-button.svg)](' + obj.spotify + ')' + '  '
-          + '[![I Chews You on Spotify](/assets/img/uploads/google-podcasts-badge-button.svg)](' + obj.google + ')' + '  '
+          + '[![I Chews You on Google Podcasts](/assets/img/uploads/google-podcasts-badge-button.svg)](' + obj.google + ')' + '  '
+          + '[![I Chews You on Stitcher](/assets/img/uploads/stitcher-badge-button.svg)](' + obj.stitcher + ')' + '  '
         );
       },
       // Preview output for this component. Can either be a string or a React component
@@ -45,6 +47,7 @@
           '[![I Chews You on Apple Podcasts](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-04-16T00:00:00Z&kind=podcast&bubble=podcasts)](' + obj.apple + ')' + '  '
           + '[![I Chews You on Spotify](/assets/img/uploads/spotify-badge-button.svg)](' + obj.spotify + ')' + '  '
           + '[![I Chews You on Spotify](/assets/img/uploads/google-podcasts-badge-button.svg)](' + obj.google + ')' + '  '
+          + '[![I Chews You on Stitcher](/assets/img/uploads/stitcher-badge-button.svg)](' + obj.stitcher + ')' + '  '
         );
       }
     });
