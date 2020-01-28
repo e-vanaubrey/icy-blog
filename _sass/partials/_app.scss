@@ -27,7 +27,7 @@ body > * {
 header {
   grid-column: full;
   display: grid;
-  background-color: $brand-color;
+  background-color: transparent;
   padding: 2rem;
   @media screen and (min-width: $screen-sm-min) {
     grid-template-columns: 1fr auto;
@@ -72,7 +72,7 @@ header > nav {
       }
       a,
       a:visited {
-        color: white;
+        color: #000;
         text-decoration: none;
         border: 0;
         @media screen and (min-width: $screen-sm-min) {
@@ -83,7 +83,7 @@ header > nav {
         }
       }
       a:hover {
-        color: white;
+        color: coral;
       }
     }
   }
@@ -91,7 +91,7 @@ header > nav {
 
 // our main content wrapper, the width scales with font size
 main {
-  width: 100%;
+  width: 100% !important;
   max-width: 52rem;
   margin-right: auto;
   margin-left: auto;
@@ -181,6 +181,11 @@ footer {
   }
 }
 
+.logo{
+  height: 60px;
+  width: 118px;
+  display: inline;
+}
 
 .excerpt{
   display: flex;
@@ -191,6 +196,7 @@ footer {
     margin-right: 20px;
   }
 }
+
 .links{
   img{
     height: 40px;
