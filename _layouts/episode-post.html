@@ -5,19 +5,19 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 
-<time datetime="{{ page.date }}">
-  <small>
-    <strong>{{ page.date | date_to_string }}</strong>
-  </small>
-</time>
 
-<img class="thumbnail" src="{{page.thumbnail}}">
 
-{% include page-intro.html %}
-
-{{page.episode_description}}
-
-{{content}}
+<div class="description">
+  <img class="thumbnail" src="{{page.thumbnail}}">
+  <div>
+    <time datetime="{{ page.date }}">
+      <small>
+        <strong>{{ page.date | date_to_string }}</strong>
+      </small>
+    </time>
+    {{content}}
+  </div>
+</div>
 
 
 <nav aria-label="Adjacent Posts">

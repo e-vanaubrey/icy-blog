@@ -2,6 +2,8 @@
 layout: episode-post
 title: 'Episode 44: Bellosom'
 date: '2020-01-27 21:13:23'
+thumbnail: /assets/img/uploads/45_bellossom.png
+
 ---
 
   This week the game's afoot as the iCY chef's delve deep into diving the long
@@ -24,4 +26,6 @@ date: '2020-01-27 21:13:23'
   Spotify](/assets/img/uploads/spotify-badge-button.svg)](https://open.spotify.com/episode/39IvXbqyo6jEstD7M6xTUd?si=LK2NUBprRxm6a0hjPOEROQ) 
   [![I Chews You on
   Spotify](/assets/img/uploads/google-podcasts-badge-button.svg)](https://podcasts.google.com/?feed=aHR0cDovL2ljaGV3c3lvdS5saWJzeW4uY29tL3Jzcw&episode=NjBkMzE4MTItNDRkNS00ZTg3LThkOGMtNDZjNmJmZDg0NWMw)
+  [![I Chews You on
+  Stitcher](/assets/img/uploads/stitcher-badge-button.svg)](https://www.stitcher.com/podcast/i-chews-you/e/66736604)
 

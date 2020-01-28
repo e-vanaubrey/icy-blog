@@ -181,19 +181,57 @@ footer {
   }
 }
 
-.links{
+
+.excerpt{
   display: flex;
+  .thumbnail{
+    height: 140px;
+    width: 140px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+}
+.links{
+  img{
+    height: 40px;
+  }
   a{
     text-decoration: none !important;
     border: none;
   }
-  img{
-    height: 40px;
-    margin-right: 20px;
+  .thumbnail{
+    height: 140px;
+    width: 140px;
+    border-radius: 8px;
   }
 }
-.thumbnail{
-  height: 100px;
-  width: 100px;
-  border-radius: 8px;
+
+@media only screen  and (max-width : 768px)  {
+  .links{
+    img{
+      width: 60%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen  and (min-width : 1024px){
+  .links{
+    display: flex;
+    img{
+      margin-right: 20px;
+    }
+  }
+  
+  .description{
+    display: flex;
+
+    .thumbnail{
+      height: 140px;
+      width: 140px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+  }
 }

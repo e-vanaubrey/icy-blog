@@ -10,24 +10,28 @@ layout: default
 
 <section>
 
-  <h3>Posts</h3>
-
   <ul>
     {% for episode in site.episodes %}
     {% assign author = site.data.authors[post.author] %}
-      <li>
-        <h4><a href="{{ episode.url }}">{{ episode.title }}</a></h4>
-        <time datetime="{{ post.date }}">
-          <small>
-            <strong>{{ episode.date | date_to_string }}</strong>
-            {% if author %}
+    <li>
+      <h4><a href="{{ episode.url }}">{{ episode.title }}</a></h4>
+
+      <div class="excerpt">
+        <img class="thumbnail" src="{{ episode.thumbnail }}">
+        <div>
+          <time datetime="{{ post.date }}">
+            <small>
+              <strong>{{ episode.date | date_to_string }}</strong>
+              {% if author %}
               by {{ author.name }}
-            {% endif %}
-          </small>
-        </time>
-        {{ episode.excerpt | strip_newlines | truncate: 180 }}
-        {{ episode.episode_links }}
-      </li>
+              {% endif %}
+            </small>
+          </time>
+          {{ episode.excerpt | strip_newlines | truncate: 200 }}
+        </div>
+
+      </div>
+    </li>
     {% endfor %}
   </ul>
 
