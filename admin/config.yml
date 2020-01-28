@@ -28,14 +28,22 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Ben Montoya", value: "ben_montoya" }
           - { label: "Ian Davis", value: "ian_davis" }
           - { label: "Jeremy Zeilik", value: "jeremy_zeilik" }
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "MM-DD-YYYY HH:mm:ss"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Categories", name: "categories", widget: "string", required: false}
-      - {label: "Spotify Link", name: "spotify", widget: "string", tagname: "Spotify"}
-      - {label: "Apple Podcasts Link", name: "apple_podcasts", widget: "string", tagname: "Apple-Podcasts"}
-      - {label: "Google Podcasts Link", name: "google_podcasts", widget: "string", tagname: "Google-Podcasts"}
-      - {label: "Stitcher Link", name: "stitcher", widget: "string", tagname: "stitcher"}
+      #EPISODES
+  - name: "episode" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Episode" # Used in the UI, ie.: "New Post"
+    folder: "_episodes" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "episode-post"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "MM-DD-YYYY HH:mm:ss"}
+      - {label: "Episode Description", name: "episode_description", widget: "markdown", required: true}
+      - {label: "Episode Links", name: "episode_links", widget: "markdown", required: true}
     # PAGES
   - name: "page"
     label: "Page"

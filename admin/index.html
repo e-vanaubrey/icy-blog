@@ -8,5 +8,42 @@
 </head>
 <body>
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerEditorComponent({
+      // Internal id of the component
+      id: "external-links",
+      // Visible label
+      label: "External Links",
+      // Fields the user need to fill out when adding an instance of the component
+      fields: [
+      {name: 'apple', label: 'Apple Podcasts', widget: 'string'},
+      {name: 'spotify', label: 'Spotify', widget: 'string'},
+      {name: 'google', label: 'Google Podcasts', widget: 'string'}],
+      // Pattern to identify a block as being an instance of this component
+      //pattern: /^youtube (\S+)$/,
+      // Function to extract data elements from the regexp match
+      /* fromBlock: function(match) {
+        return {
+          id: match[1]
+        };
+      }, */
+      // Function to create a text block from an instance of this component
+      
+      toBlock: function(obj) {
+        return(
+          '[![I Chews You on Apple Podcasts](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-04-16T00:00:00Z&kind=podcast&bubble=podcasts)](' + obj.apple + ')' + '  '
+          + '[![I Chews You on Spotify](/assets/img/uploads/spotify-badge-button.svg)](' + obj.spotify + ')' + '  '
+          + '[![I Chews You on Spotify](/assets/img/uploads/google-podcasts-badge-button.svg)](' + obj.google + ')' + '  '
+        );
+      },
+      // Preview output for this component. Can either be a string or a React component
+      // (component gives better render performance)
+      toPreview: function(obj) {
+        return (
+          '[![I Chews You on Apple Podcasts](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-04-16T00:00:00Z&kind=podcast&bubble=podcasts)](' + obj.apple +')'
+        );
+      }
+    });
+    </script>
 </body>
 </html>
