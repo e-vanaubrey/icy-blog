@@ -11,9 +11,14 @@ layout: default
   </small>
 </time>
 
+<img class="thumbnail" src="{{page.thumbnail}}">
+
 {% include page-intro.html %}
 
-{{ content }}
+{{page.episode_description}}
+
+{{content}}
+
 
 <nav aria-label="Adjacent Posts">
   <ul>
