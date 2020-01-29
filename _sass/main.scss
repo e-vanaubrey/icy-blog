@@ -9,3 +9,37 @@
   "partials/typography",
   "partials/app"
 ;
+
+.home-layout{
+  background-color: #0D0E2C;
+  color: #FFFFFF;
+  text-align: center;
+
+  h2{
+    font-size: 8rem;
+    color: #DF4848;
+  }
+
+  main{
+    padding-top: 4rem !important;
+  }
+  footer{
+    color: #000;
+  }
+
+  a{
+    color: #FFF !important; 
+    border: none;
+  }
+  a:hover{
+    color: #DF4848 !important;
+  }
+
+  .ep-thumbnail{
+    margin: 0 auto 20px;
+    height:100px;
+    width:100px;
+    border-radius: 8px;
+
+  }
+}

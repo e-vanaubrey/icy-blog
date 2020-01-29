@@ -1,0 +1,39 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en">
+
+  {% include head.html %}
+
+  <body class="home-layout">
+
+    <header>
+
+      <h1>
+        <a href="{{ "/" | relative_url }}"><img class="logo" src="/assets/img/uploads/fork-knife-lockup.svg"></a>
+      </h1>
+      
+    
+      <nav>
+        {% include navigation.html navigation=site.data.navigation %}
+      </nav>
+    
+    </header>
+
+    <main>
+
+      {{ content }}
+    
+      <small style="margin-top: 36px;">Made with <i data-feather="heart"></i> from WA, NM, NY</small>
+    </main>
+
+    
+
+    <script>
+      feather.replace()
+    </script>
+  </body>
+
+</html>

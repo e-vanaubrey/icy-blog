@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home-layout
 ---
 
 <h2>{{ site.title }}</h2>
@@ -10,11 +10,14 @@ layout: default
 
   <section>
 
-    <h3>Recent episodes</h3>
-    <ul>
-      {% for episode in site.episodes limit:3 %}
+    <h3>Weekly Special</h3>
+    <ul style="width: 40%; margin: auto;">
+      {% for episode in site.episodes limit:1 %}
         <li>
-          <a href="{{ episode.url }}">{{ episode.title }}</a>
+          <a href="{{ episode.url }}">
+            <img class="ep-thumbnail" src="{{ episode.thumbnail }}">
+            {{ episode.title }}
+          </a>
         </li>
       {% endfor %}
     </ul>
