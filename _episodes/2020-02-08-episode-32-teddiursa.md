@@ -2,7 +2,7 @@
 layout: episode-post
 title: 'Episode 32: Teddiursa'
 date: '2019-10-15 22:48:00'
-thumbnail: /assets/img/uploads/31_togetic.png
+thumbnail: /assets/img/uploads/32_teddiursa.png
 ---
 This week the ICY boys get their paws sticky with a whole host of recipes for Teddiursa. Ian introduces his new brand lifestyle and Ben shoots for the moon. All that and more on a piping hot I Chews You.
 
