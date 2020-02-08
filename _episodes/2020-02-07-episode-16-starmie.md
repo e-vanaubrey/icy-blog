@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: 'Episode 16: Starmie'
-date: '2020-06-11 22:48:00'
+date: '2019-06-11 22:48:00'
 thumbnail: /assets/img/uploads/16_starmie.png
 ---
 The boys follow the red string to find out the truth about Starmie, and then Evan reveals how to actually eat a starfish.
