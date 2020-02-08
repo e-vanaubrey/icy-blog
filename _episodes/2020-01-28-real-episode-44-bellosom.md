@@ -1,23 +1,10 @@
 ---
 layout: episode-post
-title: 'Episode 44: Bellosom'
-date: '2020-01-27 21:13:23'
+title: 'Episode 45: Bellosom'
+date: '2020-01-21 21:13:00'
 thumbnail: /assets/img/uploads/45_bellossom.png
-
 ---
-
-  This week the game's afoot as the iCY chef's delve deep into diving the long
-  hidden mysteries of a cheesy conspiracy. Will their quest to find a delicious
-  recipe be hindered, or helped, by the presence of the hula dancing plant
-  Bellossom? Listen to find out!
-
-  Follow us:
-
-  <https://twitter.com/ichewspod>
-
-  Email us:
-
-  [ichewspod@gmail.com](mailto:ichewspod@gmail.com)
+This week the game's afoot as the ICY chef's delve deep into diving the long hidden mysteries of a cheesy conspiracy. Will their quest to find a delicious recipe be hindered, or helped, by the presence of the hula dancing plant Bellossom? Listen to find out!
 
   {:.links}
   [![I Chews You on Apple
