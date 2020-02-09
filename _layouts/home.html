@@ -12,14 +12,11 @@ layout: home-layout
 
     <h3>Weekly Special</h3>
     <ul style="width: 40%; margin: auto;">
-      {% for episode in site.episodes limit:1 %}
-        <li>
-          <a href="{{ episode.url }}">
-            <img class="ep-thumbnail" src="{{ episode.thumbnail }}">
-            {{ episode.title }}
-          </a>
-        </li>
-      {% endfor %}
+        <a href="{{ site.episodes.last.url }}">
+          <img class="ep-thumbnail" src="{{ site.episodes.last.thumbnail }}">
+          {{ site.episodes.last.title }}
+        </a>
+      </li>
     </ul>
 
   </section>
