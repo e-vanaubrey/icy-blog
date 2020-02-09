@@ -43,8 +43,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "episode-post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
+      - {label: "Season", name: "season", widget: "string"}
       - {label: "Thumbnail", name: "thumbnail", widget: "image", id: "thumbnail"}
       - {label: "Episode Description", name: "body", widget: "markdown", required: false}
+    meta:
+      
 
   # PAGES
   - name: "page"
