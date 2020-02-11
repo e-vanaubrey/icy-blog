@@ -1,6 +1,4 @@
 # specify main menu items here
-- text: Menu
-  url: /menu
 - text: Write In
   url: /contact
 

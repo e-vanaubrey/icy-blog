@@ -44,7 +44,7 @@
     border: none;
   }
   a:hover{
-    color: #DF4848 !important;
+    text-decoration: underline;
   }
 
   .ep-thumbnail{
@@ -55,7 +55,21 @@
 
   }
 
-  
+  .menu-btn{
+    position: relative;
+    margin:auto;
+    background: #FFFFFF;
+    padding: 12px 60px;
+    color: rgb(13,14,44) !important;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .menu-btn:hover{
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 @media only screen 
