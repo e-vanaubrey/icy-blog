@@ -33,7 +33,7 @@
   }
 
   main{
-    padding-top: 8rem !important;
+    padding-top: 4rem !important;
   }
 
   a{
@@ -88,5 +88,11 @@
     .home-layout{
       background-size: cover;
       background-position-x:right;
+      h2{
+        font-size: 6rem;
+      }
+      .review{
+        margin: 0 auto;
+      }
     }
 }
