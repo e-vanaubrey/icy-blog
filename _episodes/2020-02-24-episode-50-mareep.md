@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: 'Episode 50: Mareep'
-date: '2020-02-24 09:31:28'
+date: '2020-02-25 09:31:28'
 season: '2'
 thumbnail: /assets/img/uploads/50_mareep.png
 ---
