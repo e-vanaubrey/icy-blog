@@ -1,7 +1,7 @@
 ---
 layout: store
-title: About
+title: I Chews You Store
 permalink: /store
-section: about
+section: store
 ---
 
