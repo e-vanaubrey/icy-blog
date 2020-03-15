@@ -1,0 +1,33 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main>
+
+      <ul>
+        {% for post in site.posts %}
+        <li class="item-container">
+          {{ post.content }}
+        </li>
+        {% endfor %}
+      </ul>
+
+    </main>
+
+    {% include footer.html %}
+
+    <script>
+      feather.replace()
+    </script>
+  </body>
+
+</html>
