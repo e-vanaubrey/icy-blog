@@ -46,7 +46,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Season", name: "season", widget: "string"}
       - {label: "Thumbnail", name: "thumbnail", widget: "image", id: "thumbnail"}
       - {label: "Episode Description", name: "body", widget: "markdown", required: false}
-    meta:
       
 
   # PAGES
