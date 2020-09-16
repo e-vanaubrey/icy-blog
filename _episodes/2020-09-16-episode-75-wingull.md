@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: "Episode 75: Wingull"
-date: 2020-09-15 18:11:18
+date: 2020-09-01 18:11:18
 season: "3"
 thumbnail: /assets/img/uploads/75_wingull.png
 ---
