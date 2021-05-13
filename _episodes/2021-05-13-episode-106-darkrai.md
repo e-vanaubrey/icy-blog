@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: "Episode 106: Darkrai"
-date: 2021-05-13 12:29:54
+date: 2021-05-04 12:29:54
 season: "4"
 thumbnail: /assets/img/uploads/106_darkrai.png
 ---
