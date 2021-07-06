@@ -1,6 +1,6 @@
 ---
 layout: episode-post
-title: "Episode 114: Vespiequen feat. Cupcakedex"
+title: "Episode 114: Vespiquen feat. Cupcakedex"
 date: 2021-07-06 09:07:36
 season: "4"
 thumbnail: /assets/img/uploads/114_vespiquen.png
