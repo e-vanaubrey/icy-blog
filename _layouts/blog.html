@@ -10,12 +10,11 @@ layout: menu
   {{ content }}
 
   <section>
-
     <ul>
       {% for episode in site.episodes reversed %}
       {% assign author = site.data.authors[post.author] %}
-      <li>
-        <a class="ep-item" href="{{ episode.url }}">
+      <li class="ep-item">
+        <a href="{{ episode.url }}">
           <h4 class="ep-title"> {{ episode.title }}</h4>
           <div class="excerpt">
             <img class="thumbnail" src="{{ episode.thumbnail }}">

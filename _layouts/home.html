@@ -2,7 +2,7 @@
 layout: home-layout
 ---
 
-<section class="container">
+<!-- <section class="container">
   <div class="row">
     <div class="review col-4">
       <div class="row">
@@ -15,20 +15,57 @@ layout: home-layout
         "What a bunch of nerds!"
     </div>
   </div>
-</section>
+</section> -->
 
-<h2>{{ site.title }}</h2>
-
-  {% include page-intro.html %}
+  
 
   {{ content }}
   
-    <div class="row">
+    <!-- <div class="row">
       <a href="/menu" class="menu-btn col" data-toggle="modal" data-target="#staticBackdrop">Menu</a>
       <a href="https://store.ichewsyou.menu" class="menu-btn store col" data-toggle="modal" data-target="#staticBackdrop">Store</a>    
+    </div> -->
+    <div class="row">
+      <div class="col-lg leftCol">
+        <div class="tagline">
+          <!-- <span> {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}</span> -->
+          <span>A podcast about<br/>cooking and<br/>eating Pokémon.</span>
+        </div>
+      </div>
+      <section class="col-lg episodeMenuList">
+        <h3>Menu</h3>
+        <ul>
+          {% for episode in site.episodes reversed %}
+          {% assign author = site.data.authors[post.author] %}
+          <li class="ep-item">
+            <a  href="{{ episode.url }}">
+              
+              <div class="excerpt">
+                <img class="thumbnail" src="{{ episode.thumbnail }}">
+                <div>
+                  <h4 class="ep-title"> {{ episode.title }}</h4>
+                  <time datetime="{{ post.date }}">
+                    <small>
+                      <strong>{{ episode.date | date_to_string }}</strong>
+                      {% if author %}
+                      by {{ author.name }}
+                      {% endif %}
+                    </small>
+                  </time>
+                  <div class="ep-blurb">
+                    {{ episode.excerpt | truncate: 200 }}
+                  </div>
+                </div>
+    
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+    
+      </section>
     </div>
-
-  
+    
 
   <!--<section>
 

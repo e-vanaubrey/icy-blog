@@ -22,12 +22,9 @@ body {
   font-weight: $base-font-weight;
   font-style: normal;
 	font-variant: normal;
-  font-size: 1.6rem; // this is equivalent to 16px
+  font-size: 1.2rem; // this is equivalent to 14px
 }
 
-h1,h2,h3,h4,h5,h6,p,figure,time {
-  padding-bottom: 2rem;
-}
 
 h1,h2,h3,h4,h5,h6,figure {
   p + &,
@@ -43,7 +40,9 @@ p.intro {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: $bold-font-weight;
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   line-height: $base-line-height / 1.3;
 }
 

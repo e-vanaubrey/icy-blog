@@ -10,34 +10,62 @@
   "partials/app"
 ;
 .ep-item{
-  color: #000000 !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  text-align: left;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  &:hover{
+    background-color: #221d2b !important;
+  }
 }
 
 .ep-title{
-  color: #000000 !important;
-  padding: 8px;
-  margin-top: 32px;
   margin-bottom: 16px;
-  border-radius: 999px;
-  border: none;
-  width: fit-content;
 }
-.ep-item:hover{
-
-  .ep-title{
-  background: #000000 !important;
-  color: #FFFFFF !important;
+.ep-item a:hover{
   text-decoration: none !important;
+}
+
+.ep-blurb{
+  p{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
   }
- 
+}
+
+.episodeMenuList{
+  background: rgba(13, 14, 40, 0.1);
+  backdrop-filter: blur(60px);
+  padding: 0 40px !important;
+
+  h3{
+    margin-top: 80px;
+    text-align: left;
+  }
+
+  ul{
+    margin-top: 40px;
+  }
+}
+
+.ep-detail-page{
+  margin-top: 15vh;
+  margin-left: 40px;
+  max-width: 800px
 }
 
 
 
 .menu-bg{
-  background: url("../assets/img/uploads/home-bg.jpeg") no-repeat center center fixed;
-  background-size: 100vw;
-  background-position-y: bottom;
+  background: url("../assets/img/uploads/home-bg.jpeg") no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   
   color: #FFFFFF;
   text-align: center;
@@ -61,12 +89,28 @@
 }
 
 .home-layout{
-  background: url("../assets/img/uploads/home-bg.jpeg") no-repeat center center fixed;
-  background-size: 100vw;
-  background-position-y: bottom;
-  box-shadow: inset 0 0 0 1000px rgba(13,14,44,.6);
+  background: url("../assets/img/uploads/home-bg.png") no-repeat right bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #FFFFFF;
   text-align: center;
+
+  .tagline{
+    position: fixed;
+    margin-top: 25vh;
+    margin-left: 40px;
+    font-size: 3.6vw;
+    text-align: left;
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 200% !important;
+    span{
+      background-color: #000 !important;
+    }
+  }
 
   h2{
     font-size: 8rem;
@@ -82,11 +126,6 @@
     padding-top: 0;
   }
 
-  main{
-    padding-top: 4rem !important;
-    margin-top: 100px;
-  }
-
   a{
     color: #FFF !important; 
     border: none;
@@ -99,8 +138,6 @@
     margin: 0 auto 20px;
     height:100px;
     width:100px;
-    border-radius: 8px;
-
   }
 
   .menu-btn{
@@ -140,13 +177,53 @@
       position: relative;
     }
     .home-layout{
+      background-position-x: left;
       background-size: cover;
-      background-position-x:right;
       h2{
         font-size: 6rem;
       }
       .review{
         margin: 0 auto;
       }
+
+      .leftCol{
+        height: 75vh;
+
+        .tagline{
+          margin-top: 10vh;
+          margin-left: 20px;
+          font-size: 8vw;
+        }
+      }
+
+      .excerpt{
+        .thumbnail{
+          height: 60px;
+          width: 60px;
+        }
+      }
     }
+    .ep-detail-page{
+      margin-top: 40px;
+      margin-left: 10px;
+      max-width: 800px
+    }
+}
+
+@media (min-device-width: 813px) and (max-device-width: 991px) {
+
+  .tagline{
+    font-size: 8vw !important;
+  }
+  .episodeMenuList{
+    margin-top: 80vh;
+  }
+
+  .ep-detail-page{
+   .description{
+     .thumbnail{
+       width: 20vw
+     }
+   }
+  }
 }
