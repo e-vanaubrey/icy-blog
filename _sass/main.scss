@@ -38,9 +38,7 @@
 }
 
 .episodeMenuList{
-  background: rgba(13, 14, 40, 0.1);
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
+  background: rgb(35, 36, 61);
   padding: 0 40px !important;
 
   h3{
@@ -86,6 +84,14 @@
     h2{
       color: #000000 !important;
     }
+  }
+}
+
+@supports ( (backdrop-filter: blur(60px)) or (-webkit-backdrop-filter: blur(60px)) ){
+  .episodeMenuList{
+    background: rgba(13, 14, 40, 0.1);
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
   }
 }
 
