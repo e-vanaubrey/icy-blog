@@ -209,6 +209,13 @@
           width: 60px;
         }
       }
+
+      .menu-bg{
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
     }
     .ep-detail-page{
       margin-top: 40px;
