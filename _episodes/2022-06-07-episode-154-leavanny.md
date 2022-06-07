@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: "Episode 154: Leavanny"
-date: 2022-05-01 13:06:33
+date: 2022-06-02 13:06:33
 season: "5"
 thumbnail: /assets/img/uploads/154_leavanny.png
 ---
