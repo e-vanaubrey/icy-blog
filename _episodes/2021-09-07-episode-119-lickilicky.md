@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: "Episode 119: Lickilicky"
-date: 2021-09-07 08:26:25
+date: 2021-08-24 08:26:25
 season: "4"
 thumbnail: /assets/img/uploads/119_lickilicky.png
 ---
