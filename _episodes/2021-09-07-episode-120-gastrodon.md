@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: "Episode 120: Gastrodon"
-date: 2021-09-07 08:34:24
+date: 2021-08-01 08:34:24
 season: "4"
 thumbnail: /assets/img/uploads/120_gastrodon.png
 ---
