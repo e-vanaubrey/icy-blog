@@ -1,7 +1,7 @@
 ---
 layout: episode-post
 title: "Episode 232: Hatenna"
-date: 2024-06-20 13:50:40
+date: 2024-04-10 13:50:40
 season: "8"
 thumbnail: /assets/img/uploads/232-hatenna_.png
 ---
